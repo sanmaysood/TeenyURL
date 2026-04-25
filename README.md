@@ -12,11 +12,38 @@ TeenyURL is a full-stack, production-grade URL shortening service designed for *
 ---
 
 ## 📸 Screenshots
-<img width="807" height="530" alt="Screenshot 2026-04-25 at 5 31 25 PM" src="https://github.com/user-attachments/assets/d4d2b881-4e73-4b19-847b-353e93eeb207" />
-<img width="615" height="637" alt="Screenshot 2026-04-25 at 5 31 04 PM" src="https://github.com/user-attachments/assets/cccb3d1e-acc9-4da0-9117-8bbd5f1ac624" />
-<img width="881" height="637" alt="Screenshot 2026-04-25 at 5 30 50 PM" src="https://github.com/user-attachments/assets/c5f93b4d-4679-4aea-9843-58b40ab767b2" />
-<img width="582" height="429" alt="Screenshot 2026-04-25 at 5 32 00 PM" src="https://github.com/user-attachments/assets/5b6c3d9f-fd3e-4f32-909d-62cf5545dcc2" />
-<img width="1042" height="625" alt="Screenshot 2026-04-25 at 5 32 35 PM" src="https://github.com/user-attachments/assets/d859bdc7-3ed2-416b-a8ae-16788e40cc31" />
+
+<p align="center">
+  <img width="615" src="https://github.com/user-attachments/assets/cccb3d1e-acc9-4da0-9117-8bbd5f1ac624" />
+  <br/>
+  <strong>Login/Signup page</strong>
+</p>
+## 📸 Screenshots
+
+<p align="center">
+  <img width="1042" src="https://github.com/user-attachments/assets/d859bdc7-3ed2-416b-a8ae-16788e40cc31" />
+  <br/>
+  <strong>Dashboard Overview with Total Links</strong>
+</p>
+
+<p align="center">
+  <img width="807" src="https://github.com/user-attachments/assets/d4d2b881-4e73-4b19-847b-353e93eeb207" />
+  <br/>
+  <strong>URL Shortening Interface with Custom Alias and Expiry Options</strong>
+</p>
+
+<p align="center">
+  <img width="881" src="https://github.com/user-attachments/assets/c5f93b4d-4679-4aea-9843-58b40ab767b2" />
+  <br/>
+  <strong>URL Shortening Interface with Custom Alias and Expiry Options</strong>
+</p>
+
+<p align="center">
+  <img width="582" src="https://github.com/user-attachments/assets/5b6c3d9f-fd3e-4f32-909d-62cf5545dcc2" />
+  <br/>
+  <strong>Generated Short URL with QR Code for Easy Sharing</strong>
+</p>
+
 
 ---
 
