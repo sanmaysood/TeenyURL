@@ -52,15 +52,14 @@ TeenyURL is a full-stack, production-grade URL shortening service designed for *
 ### 🔹 Core Functionality
 
 * Shorten long URLs instantly
-* Custom alias support (e.g. `/my-link`)
+* Custom alias support
 * Optional expiration for links
 * QR code generation for every short URL
 
-### 🔹 Authentication (Optional)
+### 🔹 Authentication
 
 * Use without login (anonymous users supported)
 * JWT-based authentication for registered users
-* Persistent tracking via `client_id` for anonymous users
 
 ### 🔹 Analytics
 
@@ -171,26 +170,40 @@ Worker → Consume Redis queue → Parse user-agent → Store in PostgreSQL
 
 ## 📊 Database Schema
 
-### URLs Table
+### 🔗 URLs Table  
+Stores all shortened links and their metadata.
 
-* `id`
-* `short_code`
-* `long_url`
-* `user_id`
-* `client_id`
-* `created_at`
-* `expires_at`
+- `id` — Unique identifier (primary key)  
+- `short_code` — Generated Base62 short code  
+- `long_url` — Original URL provided by user  
+- `user_id` — Associated user (nullable for anonymous users)  
+- `client_id` — Identifier for anonymous users  
+- `created_at` — Timestamp of creation  
+- `expires_at` — Optional expiration timestamp  
 
 ---
 
-### Analytics Table
+### 📈 Analytics Table  
+Captures click-level analytics for each short URL.
 
-* `short_code`
-* `clicked_at`
-* `browser`
-* `os`
-* `device`
-* `ip`
+- `short_code` — Reference to shortened URL  
+- `clicked_at` — Timestamp of click event  
+- `browser` — User’s browser (parsed from user-agent)  
+- `os` — Operating system  
+- `device` — Device type (mobile/desktop/tablet)  
+- `ip` — User IP address  
+
+---
+
+### 👤 Users Table  
+Stores registered user credentials for authenticated access.
+
+- `id` — Unique user identifier (primary key)  
+- `email` — User email (unique)  
+- `password` — Hashed password (bcrypt)  
+- `created_at` — Account creation timestamp  
+
+> 🔐 Passwords are securely hashed using bcrypt before storage.
 
 ---
 
@@ -218,7 +231,7 @@ DATABASE_URL=...
 JWT_SECRET=...
 UPSTASH_URL=...
 UPSTASH_TOKEN=...
-BASE_URL=http://localhost:3000
+BASE_URL=https://teenyurl-production.up.railway.app
 ```
 
 Run backend:
@@ -260,7 +273,7 @@ npm run dev
 * Environment variable:
 
 ```env
-VITE_API_URL=https://your-backend-url
+VITE_API_URL=https://teenyurl-production.up.railway.app
 ```
 
 ---
