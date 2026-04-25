@@ -27,21 +27,21 @@ TeenyURL is a full-stack, production-grade URL shortening service designed for *
 </p>
 
 <p align="center">
-  <img width="807" src="https://github.com/user-attachments/assets/d4d2b881-4e73-4b19-847b-353e93eeb207" />
-  <br/>
-  <strong>URL Shortening Interface with Custom Alias and Expiry Options</strong>
-</p>
-
-<p align="center">
   <img width="881" src="https://github.com/user-attachments/assets/c5f93b4d-4679-4aea-9843-58b40ab767b2" />
   <br/>
   <strong>URL Shortening Interface with Custom Alias and Expiry Options</strong>
 </p>
 
 <p align="center">
+  <img width="807" src="https://github.com/user-attachments/assets/d4d2b881-4e73-4b19-847b-353e93eeb207" />
+  <br/>
+  <strong>Listing all User Links</strong>
+</p>
+
+<p align="center">
   <img width="582" src="https://github.com/user-attachments/assets/5b6c3d9f-fd3e-4f32-909d-62cf5545dcc2" />
   <br/>
-  <strong>Generated Short URL with QR Code for Easy Sharing</strong>
+  <strong>Device, Browser analytics for Links</strong>
 </p>
 
 
